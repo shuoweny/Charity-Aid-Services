@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+}
+
+.field {
+  display: inline-block;
+}
+
+.depot-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* .stock-layout {
+  display: flex;
+  flex-direction: column;
+} */
+
+#modal-overlay .form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+}
+
+.popupButton {
+  font: 400 13px Inter;
+  background-color: rgba(4,125,149,1);
+  padding: 12px 10px 12px;
+  color: white;
+  border-radius: 0px;
+  outline: 0;
+  border: 0;
+  margin: 0px 0px;
+  box-shadow: 0px 1px 1px lightgray;
+  cursor: pointer;
+  transition: ease background-color 250ms;
+}
+
+.popupButton:hover {
+  background-color: rgba(9,94,111,1);
+}
+
+.selectItem {
+  width: 20%;
+  top: 330px;
+  left: 430px;
+  position: absolute;
+  display: block;
+}
+
+.selectItemLabel {
+  font-family: Inter;
+  font-size: 0.785rem;
+  color: #304050;
+  top: 296px;
+  left: 440px;
+  position: absolute;
+  display: block;
+}
+
+.selectDonor {
+  width: 20%;
+  top: 376px;
+  left: 430px;
+  position: absolute;
+  display: block;
+}
+
+.selectDonorLabel {
+  font-family: Inter;
+  font-size: 0.785rem;
+  color: #304050;
+  top: 376px;
+  left: 440px;
+  position: absolute;
+  display: block;
+}
+
+.scrollTable {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+ }
+/* Track */
+ ::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: #bec4c4;
+}
+
+/* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

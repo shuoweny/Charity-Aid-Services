@@ -1,0 +1,46 @@
+# 指南？
+
+AWS啥的我也不会，暂时就记录了些目前摸索出来的东西。欢迎大家帮忙记录哈哈
+
+## Deployment
+
+- 后段：`amplify push`，注意这个步骤会自动修改 `./.graphqlconfig.yml`
+- 前端：就正常的 `git push` 就行了，AWS会自动弄CI/CD（就是慢了点）
+- [AWS页面看有没有Deploy好（它真的贼慢的wwww）](https://ap-southeast-2.console.aws.amazon.com/amplify/home?region=ap-southeast-2#/d35zgey4lnrz48)
+
+## Project directory
+
+``` md
+.
+├── amplify  # 后端部分，都是自动生成出来的。除了标记可以碰的以外尽量别直接动，需要的话通过Amplify CLI改。
+│   ├── backend                        # 文件夹里面是 `amplify add ____` 加上去的功能
+│   │   ├── api
+│   │   │   ├── vr1familyclient
+│   │   │   │   ├── schema.graphql     # 后端数据储存的结构，可以改
+│   │   │   │   └── ...                # 不知道啥玩意，最好不要动？
+│   │   │   └── ...
+│   │   └── ...
+├── public
+│   └── ...
+├── src                    # React 前端
+│   ├── components         # 我们自己的部件
+│   │   ├── index.js       # 加了什么部件都从这里export出去（対index名字小写）
+│   │   └── ...
+│   ├── graphql            # 后端自动生成的，可以import但最好不要动
+│   │   └── ...
+│   ├── pages              # 我们自己的页面
+│   │   ├── index.js       # 加了什么页面都从这里export出去
+│   │   └── ...
+│   ├── ui-components      # 外来library的部件，自动生成的。要改的话copy paste到components里面
+│   │   └── ...
+│   ├── utils              # 我们自己的helper functions
+│   │   └── ...
+│   ├── ...                # 前端自动生成的，大多可以动
+│   ├── App.js             # 根源部件，相当于App.vue
+│   ├── aws-exports.js     # 后端自动生成的，不要动
+│   ├── index.js           # 放App.js的，相当于main.js
+│   └── ...
+├── ...
+├── .graphqlconfig.yml     # 后端自动生成的，不要动
+└── ...
+```

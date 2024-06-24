@@ -1,0 +1,116 @@
+type Donation @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  donorID: ID!
+  itemID: ID
+  quantity: Int
+}
+
+type Requisition @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  recipientID: ID!
+  depotID: ID!
+  fulfilled: Boolean!
+  kits: [ID]
+  kitQuantity: [Int]
+  items: [ID]
+  itemQuantity: [Int]
+  notes: String
+}
+
+type Donor @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  isOrganisation: Boolean!
+  email: String!
+  phone: String!
+  preferredContactMode: String!
+  nationality: String!
+  idDocuments: [IdDocument!]
+  donorName: String
+  mailingAddress: String
+  organisationName: String
+  principalContactNam: String
+  headquartersAddress: String
+  ABN: String
+}
+
+type FamilyMember {
+  name: String!
+  age: Int!
+  nationality: String!
+  idDocuments: [IdDocument!]
+}
+
+type IdDocument {
+  type: String!
+  documentID: String!
+  expiry: String!
+  imageLink: String
+}
+
+type Recipient @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  name: String!
+  previousAddress: String!
+  age: Int!
+  nationality: String!
+  familyCount: Int!
+  idDocuments: [IdDocument!]
+  partner: FamilyMember
+  children: [FamilyMember]
+}
+
+type Stock @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  itemID: ID!
+  depotID: ID!
+  quantity: Int!
+}
+
+type AmountPerCount {
+  valu: Float!
+  unit: String!
+}
+
+type ObjectQuantity {
+  objectID: ID!
+  quantity: Int!
+}
+
+type Kit @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  name: String!
+  itemIDs: [ID!]
+  itemQuantities: [Int!]
+}
+
+enum CategoryTypes {
+  GENERAL
+  FOOD
+  CLOTHING
+}
+
+type Category @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  name: String!
+  stockLevels: [Int!]
+  type: CategoryTypes!
+  items: [ID!]
+}
+
+type Item @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  name: String!
+  categoryId: ID!
+  size: String
+  expiry: String
+  brand: String
+  amountPerCount: String
+  mainIngredients: [String]
+  allergens: [String]
+}
+
+type Depot @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  name: String!
+}
+ 

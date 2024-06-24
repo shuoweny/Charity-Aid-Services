@@ -1,0 +1,76 @@
+/***************************************************************************
+ * The contents of this file were generated with Amplify Studio.           *
+ * Please refrain from making any modifications to this file.              *
+ * Any changes to this file will be overwritten when running amplify pull. *
+ **************************************************************************/
+
+export { default as StockCategoryPage } from "./StockCategoryPage";
+export { default as RecipientTable } from "./RecipientTable";
+export { default as AddRequisiton } from "./AddRequisiton";
+export { default as AboutUs } from "./AboutUs";
+export { default as Lucidechevronleft } from "./Lucidechevronleft";
+export { default as Adddonationnew } from "./Adddonationnew";
+export { default as AddEditItem } from "./AddEditItem";
+export { default as AdminDashboard } from "./AdminDashboard";
+export { default as KitOne } from "./KitOne";
+export { default as AddChild } from "./AddChild";
+export { default as DonorOption } from "./DonorOption";
+export { default as LoginPage } from "./LoginPage";
+export { default as SearchBar } from "./SearchBar";
+export { default as Donationstable } from "./Donationstable";
+export { default as EditStock } from "./EditStock";
+export { default as StockHeaderBarKits } from "./StockHeaderBarKits";
+export { default as StockLayout } from "./StockLayout";
+export { default as ItemCard } from "./ItemCard";
+export { default as Frame418 } from "./Frame418";
+export { default as VolumeUp } from "./VolumeUp";
+export { default as TransactionHistory } from "./TransactionHistory";
+export { default as DashBoardSelection } from "./DashBoardSelection";
+export { default as RequisitionLine } from "./RequisitionLine";
+export { default as RequisitionTable } from "./RequisitionTable";
+export { default as AddEditItemClothing } from "./AddEditItemClothing";
+export { default as AddEditKit } from "./AddEditKit";
+export { default as Adddonorspage } from "./Adddonorspage";
+export { default as Cell } from "./Cell";
+export { default as RequisitionPage } from "./RequisitionPage";
+export { default as MyIcon } from "./MyIcon";
+export { default as LoginPagedepot } from "./LoginPagedepot";
+export { default as StockKitPage } from "./StockKitPage";
+export { default as Donorspage } from "./Donorspage";
+export { default as StockPageSubNav } from "./StockPageSubNav";
+export { default as Frame1003 } from "./Frame1003";
+export { default as InputBox } from "./InputBox";
+export { default as Donationstableheader } from "./Donationstableheader";
+export { default as MarketingPricing } from "./MarketingPricing";
+export { default as Frame1010 } from "./Frame1010";
+export { default as AddKitItem } from "./AddKitItem";
+export { default as StockPage } from "./StockPage";
+export { default as SortIcon } from "./SortIcon";
+export { default as Lucidechevronright } from "./Lucidechevronright";
+export { default as SideBar } from "./SideBar";
+export { default as CategoryOne } from "./CategoryOne";
+export { default as Donationstableone } from "./Donationstableone";
+export { default as StockHeaderBarCategories } from "./StockHeaderBarCategories";
+export { default as AddEditCategory } from "./AddEditCategory";
+export { default as StockHeaderBarItems } from "./StockHeaderBarItems";
+export { default as Donations } from "./Donations";
+export { default as StockItemPage } from "./StockItemPage";
+export { default as Adddonationold } from "./Adddonationold";
+export { default as SideBarAdmin } from "./SideBarAdmin";
+export { default as ItemOne } from "./ItemOne";
+export { default as AddEditItemFood } from "./AddEditItemFood";
+export { default as studioTheme } from "./studioTheme";
+export { default as StockUpdateForm } from "./StockUpdateForm";
+export { default as DonationCreateForm } from "./DonationCreateForm";
+export { default as DonationUpdateForm } from "./DonationUpdateForm";
+export { default as RequisitionCreateForm } from "./RequisitionCreateForm";
+export { default as RequisitionUpdateForm } from "./RequisitionUpdateForm";
+export { default as StockCreateForm } from "./StockCreateForm";
+export { default as KitCreateForm } from "./KitCreateForm";
+export { default as KitUpdateForm } from "./KitUpdateForm";
+export { default as CategoryCreateForm } from "./CategoryCreateForm";
+export { default as CategoryUpdateForm } from "./CategoryUpdateForm";
+export { default as ItemCreateForm } from "./ItemCreateForm";
+export { default as ItemUpdateForm } from "./ItemUpdateForm";
+export { default as DepotCreateForm } from "./DepotCreateForm";
+export { default as DepotUpdateForm } from "./DepotUpdateForm";
